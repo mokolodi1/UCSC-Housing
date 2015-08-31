@@ -1,0 +1,15 @@
+<template name="addHousing">
+  <div class="app-container add-listing-container">
+    {{#autoForm schema=Schema.housing id="add-housing-listing"
+        type="method" meteormethod="addHousingListing"}}
+    <fieldset>
+      <legend>Add a listing for housing</legend>
+      {{> afQuickFields}}
+      <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-default">Reset</button>
+      </div>
+    </fieldset>
+    {{/autoForm}}
+  </div>
+</template>

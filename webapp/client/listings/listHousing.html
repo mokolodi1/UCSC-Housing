@@ -1,0 +1,14 @@
+<template name="listHousing">
+  <div class="app-container listing-container">
+    {{> reactiveTable settings=tableSettings}}
+  </div>
+</template>
+
+<template name="pricePerMonth">
+  ${{this.price_per_month}}
+</template>
+
+<template name="makeEmail">
+  {{ucsc_username}}
+  {{this}}
+</template>
